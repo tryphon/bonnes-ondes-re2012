@@ -1,0 +1,417 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+input, textarea, select {
+  *font-size: 100%; }
+
+legend {
+  color: #000; }
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #000; }
+
+@font-face {
+  font-family: "dine";
+  src: url("../media/dinengschriftstd.otf") format("opentype"); }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-family: "dine";
+  background: #e8ff81 url("../images/bg_body.png") repeat;
+  /* line-height: 18px; */ }
+
+.clear {
+  clear: both; }
+
+#container {
+  position: relative;
+  width: 950px;
+  margin: 0 auto;
+  z-index: 2; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+input, textarea, select {
+  *font-size: 100%; }
+
+legend {
+  color: #000; }
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #000; }
+
+#header {
+  padding-top: 28px; }
+
+#logo {
+  float: left; }
+
+.ligne_menu {
+  border-bottom: 3px solid #24d6b0;
+  width: 436px;
+  position: absolute;
+  right: 12px;
+  bottom: -4px;
+  z-index: 1; }
+
+#menu {
+  height: 38px;
+  width: 460px;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 8px;
+  line-height: 38px;
+  text-align: right;
+  font-family: "dine";
+  position: relative;
+  z-index: 2; }
+
+#menu ul {
+  list-style-type: none;
+  display: block;
+  width: 460px;
+  margin: 0 auto;
+  min-height: 38px;
+  position: relative;
+  z-index: 5; }
+
+#menu ul li {
+  display: block;
+  float: left;
+  margin-left: 15px;
+  min-height: 48px;
+  position: relative;
+  z-index: 6; }
+
+#menu ul li a {
+  display: block;
+  color: #000;
+  font-size: 19px; }
+
+#menu ul li a:hover {
+  color: #e34635; }
+
+#ban {
+  background: url("../images/ban-background.png") 0 0 no-repeat;
+  height: 283px;
+  width: 950px;
+  margin: 5px auto 22px;
+  position: relative; }
+
+#img_ban {
+  margin: 1px 0 0 44px;
+  position: absolute;
+  background: #F8FCE4;
+  width: 500px;
+  height: 275px;
+  overflow: hidden; }
+
+#header_share {
+  position: absolute;
+  top: 0;
+  left: 590px;
+  width: 350px;
+  height: 58px; }
+
+#header_share a {
+  display: block;
+  float: left;
+  width: 51px;
+  height: 51px;
+  margin-right: 31px;
+  overflow: hidden; }
+
+#header_share a:hover img {
+  margin-top: -51px; }
+
+#box_ticket {
+  position: absolute;
+  top: 80px;
+  left: 545px;
+  width: 310px;
+  text-align: justify;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-left: 43px;
+  margin-top: 60px; }
+
+#box_ticket strong {
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  display: block;
+  line-height: 30px;
+  border-bottom: 3px #e34635 solid; }
+
+#box_ticket a {
+  color: #fff;
+  display: block; }
+
+#box_ticket .black {
+  color: #000;
+  font-size: 23px; }
+
+.content_articles {
+  float: left; }
+
+.content_articles {
+  margin-right: 12px; }
+
+.articles {
+  width: 636px;
+  margin-bottom: 28px; }
+
+.header_articles {
+  background: url("../images/bg_header_articles.png") 0 0 no-repeat;
+  width: 636px;
+  height: 141px;
+  position: relative; }
+
+.txt_articles {
+  background: url("../images/bg_content_articles.png") repeat-y;
+  padding: 13px 28px 28px;
+  width: 584px;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 14px; }
+
+.header_articles h1 {
+  display: block;
+  text-align: center;
+  color: #e34635;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 25px;
+  padding-top: 75px;
+  line-height: 25px;
+  width: 600px;
+  margin: 0 auto;
+  font-family: "dine"; }
+
+.header_articles h1 a {
+  color: #e34635; }
+
+.articles_img {
+  display: block;
+  margin: 5px auto 0;
+  background: url("../images/bg_images_articles.png") 0 0 no-repeat;
+  width: 566px;
+  height: 325px; }
+
+.articles_img img {
+  margin-left: 6px; }
+
+.excerpt_txt {
+  position: relative;
+  width: 565px;
+  margin: 10px auto 0;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  padding-bottom: 28px; }
+
+* + html .excerpt_txt {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.excerpt_txt a {
+  color: #E6442D; }
+
+.excerpt_txt p {
+  margin-bottom: 8px; }
+
+.excerpt_txt .excerpt_liens {
+  display: block;
+  color: #25d7b1;
+  text-transform: uppercase;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin: 30px auto 0;
+  font-family: "dine";
+  font-size: 25px; }
+
+.ligne_txt_articles {
+  background: url("images/ligne_articles.png") 0 0 no-repeat;
+  height: 5px;
+  width: 96px;
+  margin: 50px auto 20px; }
+
+* + html .ligne_txt_articles {
+  margin: 0 auto 20px;
+  padding-top: 50px;
+  background: url("images/ligne_articles.png") 0 bottom no-repeat; }
+
+.ligne_sidebar_articles {
+  border-bottom: 5px dotted #4bdea6;
+  width: 90px;
+  margin: 15px auto; }
+
+.share_articles {
+  font-family: "dine";
+  font-size: 18px;
+  position: absolute;
+  width: 100%; }
+
+.share_articles_single {
+  font-family: "dine";
+  font-size: 18px; }
+
+* + html .share_articles {
+  left: 0; }
+
+.liens_share {
+  margin-top: 10px; }
+
+.liens_share a {
+  margin-right: 5px;
+  float: left; }
+
+.liens_share span {
+  padding-left: 80px;
+  display: block;
+  height: 24px;
+  line-height: 38px; }
+
+.footer_articles {
+  background: #e34635;
+  padding: 15px 15px 7px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "dine";
+  font-size: 18px;
+  width: 535px;
+  margin: 10px auto 0; }
+
+.footer_articles a {
+  color: #fff; }
+
+.content_sidebar {
+  width: 300px;
+  float: left; }
+
+#twitter-widget-2, #facebook-2 {
+  color: #000;
+  margin-bottom: 28px; }
+
+#search-2 div, #facebook-2 div, #flickr div, #vidz div, #radio-2 div, #pub, .form_subscribe, #text-2 div, .textwidget {
+  background: url("../images/bg_content_sidebar.png") repeat-y;
+  padding: 0 17px 17px;
+  width: 266px; }
+
+#twitter-follow {
+  text-align: center; }
+
+#twitter-widget-2 ul, #recent-posts-2 ul {
+  background: url("../images/bg_content_sidebar.png") repeat-y;
+  list-style-type: none;
+  padding: 0 20px 20px; }
+
+#twitter-widget-2 ul {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+#twitter-widget-2 ul li a {
+  color: #e34635; }
+
+#twitter-widget-2 ul li {
+  border-bottom: 1px dotted #24D6B0;
+  display: block;
+  padding: 5px 0; }
+
+.widgettitle {
+  display: block;
+  width: 300px;
+  height: 80px;
+  background: url("../images/bg_titre_sidebar.png") 0 0 no-repeat;
+  line-height: 71px;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: normal;
+  text-align: center;
+  font-family: "dine"; }

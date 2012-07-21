@@ -1,0 +1,31 @@
+@import "reset";
+
+@font-face{
+	font-family: "dine";
+	src: url("../media/dinengschriftstd.otf") format("opentype");
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	font-family:"dine";
+	background: #e8ff81 url('../images/bg_body.png') repeat;
+	/* line-height: 18px; */
+}
+
+.clear{
+	clear: both;
+}
+
+#container{
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+	z-index: 2;
+}
+
+@import "reset";
+@import "header";
+@import "content";
+@import "sidebar";

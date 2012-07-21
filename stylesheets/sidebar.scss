@@ -1,0 +1,54 @@
+.content_sidebar {
+	width: 300px;  
+  float: left;
+}
+
+#twitter-widget-2, #facebook-2 {
+	color: #000;
+	margin-bottom: 28px;
+}
+
+#search-2 div, #facebook-2 div, #flickr div, #vidz div, #radio-2 div, #pub, .form_subscribe, #text-2 div, .textwidget{
+	background: url('../images/bg_content_sidebar.png') repeat-y;
+	padding: 0 17px 17px;
+	width: 266px;
+}
+
+#twitter-follow {
+	text-align: center;
+}
+
+#twitter-widget-2 ul, #recent-posts-2 ul{
+	background: url('../images/bg_content_sidebar.png') repeat-y;
+	list-style-type: none;
+	padding: 0 20px 20px;
+}
+
+#twitter-widget-2 ul {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif; 
+	font-size: 12px;
+}
+
+#twitter-widget-2 ul li a{
+	color: #E34635
+}
+
+#twitter-widget-2 ul li {
+	border-bottom: 1px dotted #24D6B0;
+	display: block;
+	padding: 5px 0;
+}
+
+.widgettitle{
+	display: block;
+	width: 300px;
+	height: 80px;
+	background: url('../images/bg_titre_sidebar.png') 0 0 no-repeat;
+	line-height: 71px;
+	font-size: 19px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: normal;
+	text-align: center;
+	font-family: "dine";
+}
