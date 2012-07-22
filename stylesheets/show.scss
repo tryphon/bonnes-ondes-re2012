@@ -1,0 +1,22 @@
+body.show #archives {
+    a {
+        $size: 70px;
+        $padding_top: 25px;
+
+        font-size: 18px;
+        font-family: "dine";
+
+        display: block;
+        width: $size;
+        height: $size - $padding_top;
+        padding-top: $padding_top;
+        color: white;
+        background-color: #E34635;
+        text-align: center;
+
+        float: left;
+        margin-left: 10px;
+
+        margin-top: 10px;
+    }
+}

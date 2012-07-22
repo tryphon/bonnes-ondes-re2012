@@ -1,0 +1,43 @@
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Esperanzah! 2012">		
+    <meta property="og:type" content="Event" />
+    <meta property="og:site_name" content="Esperanzah! 2012">
+    <meta name="keywords" content="Esperanzah, Esperanzah!, festival, musique, floreffe, namur, belgique" />
+    <meta name="description" content="Festival Esperanzah!, du 3 au 5 août à l'Abbaye de Floreffe"/>
+    <meta name="rating" content="general" />
+    <meta name="expires" content="never" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="localisation" content="Floreffe" />
+    <meta name="URL" content="http://www.esperanzah.be" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="{{theme.url_for_assets}}/images/esperanzah.ico"  />
+    <link href="{{theme.url_for_assets}}/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <script src="https://platform.twitter.com/anywhere.js?id=NB6w10k567glsyr7fKRJiQ&v=1" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+      twttr.anywhere.config({ callbackURL: "{{ show.url_for }}" });
+    </script>               
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="{{theme.url_for_assets}}/javascripts/application.js"></script>
+
+    <script src="/javascripts/player.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/player.css"/>
+
+    <script>
+      threeSixtyPlayer.config.loadRingColor = "#d8ef77";
+      threeSixtyPlayer.config.playRingColor = "#4acfb3";
+      threeSixtyPlayer.config.backgroundRingColor = "#e6f2b0";
+    </script>
+
+    <!--[if IE]>
+        <style>
+          @font-face{
+  	      font-family: "dine";
+	        src: url("media/DINEngschriftStd.otf");
+          }
+        </style>
+        <![endif]-->
+
+    <link rel="alternate" type="application/rss+xml" title="Radio Esperanzah! 2012" href="{{show.url_for_podcast}}" />

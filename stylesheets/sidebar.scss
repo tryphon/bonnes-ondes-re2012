@@ -18,7 +18,7 @@
 	text-align: center;
 }
 
-#twitter-widget-2 ul, #recent-posts-2 ul{
+#twitter-widget-2 ul, #recent-posts-2 ul {
 	background: url('../images/bg_content_sidebar.png') repeat-y;
 	list-style-type: none;
 	padding: 0 20px 20px;
@@ -51,4 +51,23 @@
 	font-weight: normal;
 	text-align: center;
 	font-family: "dine";
+}
+
+.content_sidebar .widgetcontent {
+	background: url('../images/bg_content_sidebar.png') repeat-y;
+	padding: 0 20px 20px;
+  font-size: 14px;
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif; 
+}
+
+.content_sidebar ul.partenaires {
+  margin-top: 16px;
+
+  li {
+    padding: 3px 0;
+  }
+}
+
+.content_sidebar a {
+	color: #E34635
 }

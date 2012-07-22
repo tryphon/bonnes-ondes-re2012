@@ -1,0 +1,39 @@
+body.episode {
+    .description {
+        img {
+            float: right;
+            margin-left: 1em;
+        }
+    }
+}
+
+.content_sidebar .audio {
+    text-align: center;
+    width: 300px;
+	  background: url('../images/bg_content_sidebar.png') repeat-y;
+
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    .name {
+        font-size: 18px;
+        font-family: "dine";
+    }
+
+    .links a {
+        color: #E34635;
+    }
+
+    .ui360-vis {
+        margin-left: 25px;
+
+        .sm2_link {
+            display: none;
+        }
+    }
+
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+

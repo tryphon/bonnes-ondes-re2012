@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    {% include 're2012/head' %}
+    <title>{{ episode.title }} sur {{ show.name }}</title>
+  </head>
+  <body class="episode">
+	  <div id="container">
+		  <div id="header">
+        {% include 're2012/header_festival' %}
+
+        <div id="smallban">
+          <p><a href="{{ show.url_for }}"><strong>Radio Esperanzah!</strong> en direct du 2 au 5 août</a></p>
+          {% include 're2012/header_share' %}
+			  </div>
+      </div>
+
+      <div id="content">
+        <div class="content_articles">
+          <div class="articles">
+			      <div class="header_articles">
+				      <h1>
+                {{episode.title}}
+              </h1>
+			      </div>
+			      <div class="txt_articles">			
+						  <div class="excerpt_txt">
+                <div class="description">
+                  {{ episode.image.tag }}
+
+                  {{ episode.description | textilize }}
+                </div>
+                <div class="share_articles">
+					        <div class="liens_share">
+						        <a href="http://www.facebook.com/share.php?u={{episode.url_for}}" title="Partager sur Facebook" target="_blank">
+                      <img src="{{theme.url_for_assets}}/images/picto_fb_mini.png" alt="Partager sur FaceBook">
+                    </a>
+						        <a href="http://twitter.com/intent/tweet?hashtags=esperanzah&amp;text={{episode.title}}&amp;url={{episode.url_for}}" title="Partagez sur Twitter" target="_blank">
+                      <img src="{{theme.url_for_assets}}/images/picto_tw_mini.png" alt="Partagez sur Twitter">
+                    </a>
+					          <span>Vous avez aimé ? Partagez !</span>
+					        </div>
+				        </div>
+								<br>
+							</div>
+
+			        <div class="footer_articles">
+			        </div>
+			      </div>
+		      </div>
+        </div>
+
+        <div class="content_sidebar">
+          <div class="widget">
+	          <h2 class="widgettitle">Ecouter</h2>
+	          <div>
+              {% unless episode.principal_contents == empty %}
+     	        {% for content in episode.principal_contents %}
+	            <div class="audio">
+                
+                {{ content.larg_audio_player }}
+
+                <p class="name">{{content.name}}</p>
+
+                <p class="duration">
+                  {{ content.duration }} mins
+                </p>
+
+                <p class="links">
+                  <a href="{{content.url_for_playlist}}">Ecouter</a> 
+                  | Télécharger <a href="{{content.url_for_mp3}}">Mp3</a>
+                  | <a href="{{content.url_for_ogg}}">Ogg</a>
+                </p>
+	            </div>
+              {% endfor %}
+              {% endunless %}
+	          </div>
+          </div>
+
+          {% include 're2012/sidebar_twitter' %}
+          {% include 're2012/sidebar_facebook' %}
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
