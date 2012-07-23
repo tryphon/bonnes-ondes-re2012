@@ -2,7 +2,11 @@
 <html lang="fr">
   <head>
     {% include 're2012/head' %}
+
     <title>{{ show.name }}</title>
+
+    <meta property="og:title" content="{{show.name}}"/>		
+    <meta property="og:image" content="{{show.url_for}}{{theme.url_for_assets}}/images/ban-slide-sample.jpg" />
   </head>
   <body class="show">
 	  <div id="container">

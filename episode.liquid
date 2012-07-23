@@ -3,6 +3,11 @@
   <head>
     {% include 're2012/head' %}
     <title>{{ episode.title }} sur {{ show.name }}</title>
+
+    <title>{{ show.name }}</title>
+
+    <meta property="og:title" content="{{ episode.title }} sur {{ show.name }}"/>		
+    <meta property="og:image" content="{{show.url_for}}{{ episode.image.url_for }}" />
   </head>
   <body class="episode">
 	  <div id="container">
