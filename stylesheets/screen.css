@@ -507,21 +507,20 @@ body.episode .description img {
   float: right;
   margin-left: 1em; }
 
+.content_sidebar .noaudio {
+  text-align: center; }
+
 .content_sidebar .audio {
   text-align: center;
-  width: 300px;
-  background: url("../images/bg_content_sidebar.png") repeat-y;
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  padding-bottom: 20px;
-  margin-bottom: 20px; }
+  font-size: 14px; }
   .content_sidebar .audio .name {
     font-size: 18px;
     font-family: "dine"; }
   .content_sidebar .audio .links a {
     color: #E34635; }
   .content_sidebar .audio .ui360-vis {
-    margin-left: 25px; }
+    margin-left: 10px; }
     .content_sidebar .audio .ui360-vis .sm2_link {
       display: none; }
 

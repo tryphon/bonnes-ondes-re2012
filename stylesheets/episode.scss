@@ -7,10 +7,12 @@ body.episode {
     }
 }
 
+.content_sidebar .noaudio {
+    text-align: center;
+}
+
 .content_sidebar .audio {
     text-align: center;
-    width: 300px;
-	  background: url('../images/bg_content_sidebar.png') repeat-y;
 
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -25,15 +27,13 @@ body.episode {
     }
 
     .ui360-vis {
-        margin-left: 25px;
+        margin-left: 10px;
 
         .sm2_link {
             display: none;
         }
     }
 
-    padding-bottom: 20px;
-    margin-bottom: 20px;
 }
 
 

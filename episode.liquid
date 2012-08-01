@@ -58,27 +58,34 @@
         <div class="content_sidebar">
           <div class="widget">
 	          <h2 class="widgettitle">Ecouter</h2>
-	          <div>
-              {% unless episode.principal_contents == empty %}
-     	        {% for content in episode.principal_contents %}
-	            <div class="audio">
-                
-                {{ content.larg_audio_player }}
+	          <div class="widgetcontent">
+              {% if episode.broadcasted_at < now %}
+       	        {% for content in episode.principal_contents %}
+	              <div class="audio">
+                  {{ content.larg_audio_player }}
 
-                <p class="name">{{content.name}}</p>
+                  <p class="name">{{content.name}}</p>
+                  
+                  <p class="duration">
+                    {{ content.duration }} mins
+                  </p>
 
-                <p class="duration">
-                  {{ content.duration }} mins
-                </p>
-
-                <p class="links">
-                  <a href="{{content.url_for_playlist}}">Ecouter</a> 
-                  | Télécharger <a href="{{content.url_for_mp3}}">Mp3</a>
-                  | <a href="{{content.url_for_ogg}}">Ogg</a>
-                </p>
-	            </div>
-              {% endfor %}
-              {% endunless %}
+                  <p class="links">
+                    <a href="{{content.url_for_playlist}}">Ecouter</a> 
+                    | Télécharger <a href="{{content.url_for_mp3}}">Mp3</a>
+                    | <a href="{{content.url_for_ogg}}">Ogg</a>
+                  </p>
+	              </div>
+                {% endfor %}
+              {% else %}
+                <div class="noaudio">
+                {% unless episode.tags contains 'live' %}
+                  Retrouvez prochainement<br/>le contenu de ce programme
+                {% else %}
+                  Retrouvez <a href="/tags/live">les concerts en direct</a>
+                {% endunless %}
+                </div>
+              {% endif %}
 	          </div>
           </div>
 
