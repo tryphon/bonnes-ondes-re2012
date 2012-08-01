@@ -4,6 +4,27 @@ body.episode {
             float: right;
             margin-left: 1em;
         }
+
+        strong {
+            font-weight: bold;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 110%;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin-bottom: 8px;
+            li {
+                list-style: circle inside;
+            }
+        }
     }
 }
 

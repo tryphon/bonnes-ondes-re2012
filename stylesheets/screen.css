@@ -507,6 +507,18 @@ a, a:hover, a:visited {
 body.episode .description img {
   float: right;
   margin-left: 1em; }
+body.episode .description strong {
+  font-weight: bold; }
+body.episode .description em {
+  font-style: italic; }
+body.episode .description h2 {
+  font-weight: bold;
+  font-size: 110%;
+  margin-bottom: 8px; }
+body.episode .description ul {
+  margin-bottom: 8px; }
+  body.episode .description ul li {
+    list-style: circle inside; }
 
 .content_sidebar .noaudio {
   text-align: center; }
