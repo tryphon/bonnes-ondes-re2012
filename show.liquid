@@ -7,6 +7,24 @@
 
     <meta property="og:title" content="{{show.name}}"/>		
     <meta property="og:image" content="{{show.url_for}}{{theme.url_for_assets}}/images/ban-slide-sample.jpg" />
+
+    <script src="{{theme.url_for_assets}}/javascripts/slides.min.jquery.js"></script>
+
+    <script>
+      $(function(){ $("#slides").slides({
+        play: 5000,
+        randomize: true,
+        animationStart: function(current){
+			    $('.caption').animate({bottom:-35},100);
+				},
+				animationComplete: function(current){
+					$('.caption').animate({bottom:0},200);
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({bottom:0},200);
+				}
+      });});
+    </script>
   </head>
   <body class="show">
 	  <div id="container">
@@ -16,15 +34,35 @@
         <div id="ban">
 				  <div id="img_ban">
             {% unless show.episodes == empty %}
-
-            {% for header_episode in show.tag.headline limit:1 %}
-            <a href="{{ header_episode.url_for }}" title="{{ header_episode.title }}">
-              <span class="caption">{{ header_episode.title }}</span>
-              <img src="{{ header_episode.image.url_for_larg }}" alt="{{ header_episode.title }}"/>
-            </a>
-            {% endfor %}
+            <div id="slides">
+              <div class="slides_container">
+                {% for header_episode in show.tag.headline %}
+                <div class="slide">
+                  <a href="{{ header_episode.url_for }}" title="{{ header_episode.title }}">
+                    <img src="{{header_episode.image.url_for_larg}}" alt="{{ header_episode.title }}"/>
+                  </a>
+                  <div class="caption">
+                    &#8594;
+                    <strong>{{ header_episode.title }}</strong>
+                    {% unless header_episode.tags contains 'podcast' %}
+                      {{ header_episode.broadcasted_at | prettydate }}
+                    {% endunless %}
+						      </div>
+                </div>
+                {% endfor %}
+                <div class="slide">
+                  <a href="http://flickr.com/groups/radio-esperanzah" title="Tous les photos de Radio Esperanzah!">
+                    <img src="{{theme.url_for_assets}}/images/ban-slide-sample.jpg" alt="Tous les photos de Radio Esperanzah!"/>
+                  </a>
+                  <div class="caption">
+                    &#8594;
+                    <strong>Radio Esperanzah! en images</strong>
+						      </div>
+                </div>
+              </div>
+            </div>
             {% else %}
-            <img src="{{theme.url_for_assets}}/images/ban-slide-sample.jpg"/>
+                <img src="{{theme.url_for_assets}}/images/ban-slide-sample.jpg"/>
             {% endunless %}
           </div>
 

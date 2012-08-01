@@ -222,6 +222,33 @@ a, a:hover, a:visited {
     font-size: 30px;
     text-shadow: 1px 1px white; }
 
+.slides_container {
+  width: 500px;
+  height: 275px; }
+
+.slides_container div {
+  width: 500px;
+  height: 275px;
+  display: block; }
+
+.slides_container div.caption {
+  z-index: 500;
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+  height: 30px;
+  padding: 10px 10px 0 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.3em;
+  line-height: 1.33;
+  text-shadow: none;
+  text-align: right;
+  color: #E34635; }
+  .slides_container div.caption strong {
+    color: white;
+    margin: 0 8px; }
+
 #header_share {
   position: absolute;
   top: 0;
