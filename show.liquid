@@ -16,7 +16,8 @@
         <div id="ban">
 				  <div id="img_ban">
             {% unless show.episodes == empty %}
-            {% for header_episode in show.episodes limit:1 %}
+
+            {% for header_episode in show.tag.headline limit:1 %}
             <a href="{{ header_episode.url_for }}" title="{{ header_episode.title }}">
               <span class="caption">{{ header_episode.title }}</span>
               <img src="{{ header_episode.image.url_for_larg }}" alt="{{ header_episode.title }}"/>
