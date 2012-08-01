@@ -14,6 +14,7 @@
       $(function(){ $("#slides").slides({
         play: 5000,
         randomize: true,
+        hoverPause: true,
         animationStart: function(current){
 			    $('.caption').animate({bottom:-35},100);
 				},
@@ -40,14 +41,14 @@
                 <div class="slide">
                   <a href="{{ header_episode.url_for }}" title="{{ header_episode.title }}">
                     <img src="{{header_episode.image.url_for_larg}}" alt="{{ header_episode.title }}"/>
+                    <div class="caption">
+                      &#8594;
+                      <strong>{{ header_episode.title }}</strong>
+                      {% unless header_episode.tags contains 'podcast' %}
+                        {{ header_episode.broadcasted_at | prettydate }}
+                      {% endunless %}
+						        </div>
                   </a>
-                  <div class="caption">
-                    &#8594;
-                    <strong>{{ header_episode.title }}</strong>
-                    {% unless header_episode.tags contains 'podcast' %}
-                      {{ header_episode.broadcasted_at | prettydate }}
-                    {% endunless %}
-						      </div>
                 </div>
                 {% endfor %}
                 <div class="slide">
