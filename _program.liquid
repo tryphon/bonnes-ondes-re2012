@@ -1,0 +1,31 @@
+          <div id="program" class="articles">
+			      <div class="smallheader_articles">
+				      <h1>
+                Rendez-vous
+              </h1>
+			      </div>
+			      <div class="txt_articles">			
+						  <div class="excerpt_txt">
+                {% for episode in show.tag.jeudi reversed %}
+                {% if forloop.first %}<h3>Jeudi 2 août</h3>{% endif %}
+                {% include 're2012/program_episode' %}
+                {% endfor %}
+
+                {% for episode in show.tag.vendredi reversed %}
+                {% if forloop.first %}<h3>Vendredi 3 août</h3>{% endif %}
+                {% include 're2012/program_episode' %}
+                {% endfor %}
+
+                {% for episode in show.tag.samedi reversed %}
+                {% if forloop.first %}<h3>Samedi 4 août</h3>{% endif %}
+                {% include 're2012/program_episode' %}
+                {% endfor %}
+
+                {% for episode in show.tag.dimanche reversed %}
+                {% if forloop.first %}<h3>Dimanche 5 août</h3>{% endif %}
+                {% include 're2012/program_episode' %}
+                {% endfor %}
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
