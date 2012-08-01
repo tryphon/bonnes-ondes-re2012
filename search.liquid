@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    {% include 're2012/head' %}
+    {% capture tag_name %}{{search | replace:'_',' ' | capitalize}}{% endcapture %}
+
+    <title>{{tag_name}} sur {{show.name}}</title>
+
+    <meta property="og:title" content="{{ tag_name }} sur {{ show.name }}"/>		
+    <meta property="og:image" content="{{show.url_for}}{{theme.url_for_assets}}/images/ban-slide-sample.jpg" />
+  </head>
+  <body class="search">
+	  <div id="container">
+      {% include 're2012/header_small' %}
+
+      <div id="content">
+        <div class="content_articles">
+          <div class="articles">
+			      <div class="header_articles">
+				      <h1>
+                {{tag_name}}
+              </h1>
+			      </div>
+			      <div class="txt_articles">			
+						  <div class="excerpt_txt">
+                <div class="description">
+                  <p>
+                    Voici tous les émissions correspondants à votre recherche :
+                  </p>
+
+                  {% for episode in episodes reversed %}
+                  <a href="{{ episode.url_for }}" title="{{ episode.title }}"><h3>{{ episode.title }}</h3></a>
+
+                  <div class="broadcasted_at">
+                  {% unless episode.tags contains 'podcast' %}
+                    {{ episode.broadcasted_at | prettydate }}
+                  {% endunless %}
+                  </div>
+
+                  <p>
+                    {{ episode.description | textilize | strip_tags | truncate: 200 }}
+                  </p>
+                  {% endfor %}
+                </div>
+                <div class="share_articles">
+					        <div class="liens_share">
+						        <a href="http://www.facebook.com/share.php?u={{episode.url_for}}" title="Partager sur Facebook" target="_blank">
+                      <img src="{{theme.url_for_assets}}/images/picto_fb_mini.png" alt="Partager sur FaceBook">
+                    </a>
+						        <a href="http://twitter.com/intent/tweet?hashtags=esperanzah&amp;text={{ episode.title }} sur {{ show.name }}&amp;url={{episode.url_for}}" title="Partagez sur Twitter" target="_blank">
+                      <img src="{{theme.url_for_assets}}/images/picto_tw_mini.png" alt="Partagez sur Twitter">
+                    </a>
+					          <span>Vous avez aimé ? Partagez !</span>
+					        </div>
+				        </div>
+								<br>
+							</div>
+
+			        <div class="footer_articles">
+                {{ episodes | size }} émission(s) trouvée(s)
+			        </div>
+			      </div>
+		      </div>
+        </div>
+
+        <div class="content_sidebar">
+          <div class="widget">
+	          <h2 class="widgettitle">Ecouter</h2>
+	          <div class="widgetcontent">
+	            <div class="audio">
+	            </div>
+	          </div>
+          </div>
+
+          {% include 're2012/sidebar_twitter' %}
+          {% include 're2012/sidebar_facebook' %}
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

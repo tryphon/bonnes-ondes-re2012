@@ -11,14 +11,7 @@
   </head>
   <body class="episode">
 	  <div id="container">
-		  <div id="header">
-        {% include 're2012/header_festival' %}
-
-        <div id="smallban">
-          <p><a href="{{ show.url_for }}"><strong>Radio Esperanzah!</strong> en direct du 2 au 5 août</a></p>
-          {% include 're2012/header_share' %}
-			  </div>
-      </div>
+      {% include 're2012/header_small' %}
 
       <div id="content">
         <div class="content_articles">
@@ -50,6 +43,19 @@
 							</div>
 
 			        <div class="footer_articles">
+                {% for tag in episode.tags %}
+                  {% if forloop.first %}
+                  <div class="keywords":>
+                    <strong>Mots-clés:</strong>
+                  {% endif %}
+                  
+                    {% capture tag_name %}{{tag | replace:'_',' '}}{% endcapture %}
+                    <a href="/tags/{{ tag }}" title="{{tag_name}}, toutes les émissions">{{tag_name}}</a>{% unless forloop.last %},{% endunless %}
+                  
+                  {% if forloop.last %}
+                  </div>
+                  {% endif %}
+                {% endfor %}
 			        </div>
 			      </div>
 		      </div>

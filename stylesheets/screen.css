@@ -493,7 +493,8 @@ a, a:hover, a:visited {
   background: url("../images/bg_content_sidebar.png") repeat-y;
   padding: 0 20px 20px;
   font-size: 14px;
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif; }
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin-bottom: 28px; }
 
 .content_sidebar ul.partenaires {
   margin-top: 16px; }
@@ -537,3 +538,11 @@ body.show #archives a {
   float: left;
   margin-left: 10px;
   margin-top: 10px; }
+
+body.search .description h3 {
+  font-family: "dine";
+  font-size: 20px; }
+body.search .description .broadcasted_at {
+  float: right;
+  margin-top: -1.8em;
+  font-weight: bold; }
