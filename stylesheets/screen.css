@@ -563,9 +563,10 @@ body.search .description .broadcasted_at {
   margin: 0; }
 #live .txt_articles {
   padding-top: 0;
+  padding-bottom: 0;
   text-align: center; }
 #live .ui360-vis a {
-  top: 40%; }
+  top: 30%; }
 #live .player {
   text-align: left;
   padding-left: 300px; }
@@ -575,5 +576,11 @@ body.search .description .broadcasted_at {
     color: #e34635; }
   #live .player .broadcasted_at {
     display: block; }
+  #live .player .sm2_link {
+    text-align: center;
+    padding: 30px;
+    background: #e8ff81 url("../images/bg_body.png") repeat;
+    margin-left: -20px; }
 #live .m3u {
+  margin-top: 12px;
   clear: both; }

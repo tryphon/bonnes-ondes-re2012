@@ -5,11 +5,12 @@
 
     .txt_articles {
         padding-top: 0;
+        padding-bottom: 0;
         text-align: center;
     }
 
     .ui360-vis a {
-        top: 40%;
+        top: 30%;
     }
 
     .player {
@@ -24,9 +25,16 @@
         .broadcasted_at {
             display: block;
         }
+        .sm2_link {
+            text-align: center;
+            padding: 30px;
+            background: #e8ff81 url("../images/bg_body.png") repeat;
+            margin-left: -20px;
+        }
     }
 
     .m3u {
+        margin-top: 12px;
         clear: both;
     }
 }

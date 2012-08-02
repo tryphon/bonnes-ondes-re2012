@@ -1,7 +1,6 @@
       <script>
         threeSixtyPlayer.config.autoPlay = true;
         threeSixtyPlayer.config.showHMSTime = false;
-        threeSixtyPlayer.config.playRingColor = threeSixtyPlayer.config.loadRingColor;
       </script>
 
       <div id="live" class="articles">
@@ -20,9 +19,16 @@
               </a>
             </div>
 
+            {% for next_episode in show.not_broadcasted_episodes limit:1 %}
+            <div class="footer_articles">
+              A venir : 
+              <a href="{{ next_episode.url_for }}">{{ next_episode.title }}, {{ next_episode.broadcasted_at | prettydate }}</a>
+            </div>
+            {% endfor %}
+
             <div class="m3u">
-              <a href="http://stream.tryphon.eu/live.mp3.m3u">Ecouter avec votre lecteur</a>,
-              <a href="http://stream.tryphon.eu/live.ogg.m3u">en Ogg</a>
+              <a href="http://stream.tryphon.eu/live.mp3.m3u">Ecouter avec votre lecteur</a>
+              <a href="http://stream.tryphon.eu/live.ogg.m3u">(en Ogg)</a>
             </div>
           </div>
         </div>
