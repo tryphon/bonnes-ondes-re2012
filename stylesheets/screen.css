@@ -558,3 +558,22 @@ body.search .description .broadcasted_at {
   float: right;
   margin-top: -1.8em;
   font-weight: bold; }
+
+#live .excerpt_txt {
+  margin: 0; }
+#live .txt_articles {
+  padding-top: 0;
+  text-align: center; }
+#live .ui360-vis a {
+  top: 40%; }
+#live .player {
+  text-align: left;
+  padding-left: 300px; }
+  #live .player strong {
+    font-family: "dine";
+    font-size: 20px;
+    color: #e34635; }
+  #live .player .broadcasted_at {
+    display: block; }
+#live .m3u {
+  clear: both; }

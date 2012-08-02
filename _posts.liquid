@@ -1,0 +1,26 @@
+          {% for post in show.posts limit:1 %}
+          <div class="articles">
+			      <div class="header_articles">
+				      <h1>
+                {{post.title}}
+              </h1>
+			      </div>
+			      <div class="txt_articles">			
+						  <div class="excerpt_txt">
+                {{ post.description | textilize }}
+                <div class="share_articles">
+					        <div class="liens_share">
+						        <a href="http://www.facebook.com/share.php?u={{show.url_for}}" title="Partager sur Facebook" target="_blank">
+                      <img src="{{theme.url_for_assets}}/images/picto_fb_mini.png" alt="Partager sur FaceBook">
+                    </a>
+						        <a href="http://twitter.com/intent/tweet?hashtags=esperanzah&amp;text={{post.title}}&amp;url={{show.url_for}}" title="Partagez sur Twitter" target="_blank">
+                      <img src="{{theme.url_for_assets}}/images/picto_tw_mini.png" alt="Partagez sur Twitter">
+                    </a>
+					          <span>Vous avez aimé ? Partagez !</span>
+					        </div>
+				        </div>
+								<br>
+							</div>
+			      </div>
+		      </div>
+          {% endfor %}

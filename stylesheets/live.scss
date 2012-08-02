@@ -1,0 +1,32 @@
+#live {
+    .excerpt_txt {
+        margin: 0;
+    }
+
+    .txt_articles {
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .ui360-vis a {
+        top: 40%;
+    }
+
+    .player {
+        text-align: left;
+        padding-left: 300px;
+
+        strong {
+	          font-family: "dine";
+	          font-size: 20px;
+	          color: #e34635;
+        }
+        .broadcasted_at {
+            display: block;
+        }
+    }
+
+    .m3u {
+        clear: both;
+    }
+}

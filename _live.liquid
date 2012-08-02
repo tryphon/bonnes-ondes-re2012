@@ -1,0 +1,29 @@
+      <script>
+        threeSixtyPlayer.config.autoPlay = true;
+        threeSixtyPlayer.config.showHMSTime = false;
+        threeSixtyPlayer.config.playRingColor = threeSixtyPlayer.config.loadRingColor;
+      </script>
+
+      <div id="live" class="articles">
+			  <div class="txt_articles">			
+					<div class="excerpt_txt">
+            <div class="player ui360 ui360-vis">
+              <a onclick="location.href = 'http://stream.tryphon.eu/live.mp3.m3u'" href="http://stream.tryphon.eu/live.mp3" title="Ecouter Radio Esperanzah! en direct">
+                {% for past_episode in show.broadcasted_episodes limit:1 %}
+                  {% unless past_episode.tags contains 'podcast' %}
+                  <strong>{{ past_episode.title }}</strong>
+                  <span class="broadcasted_at">
+                    {{ past_episode.broadcasted_at | prettydate }}
+                  </span>
+                  {% endunless %}
+                {% endfor %}
+              </a>
+            </div>
+
+            <div class="m3u">
+              <a href="http://stream.tryphon.eu/live.mp3.m3u">Ecouter avec votre lecteur</a>,
+              <a href="http://stream.tryphon.eu/live.ogg.m3u">en Ogg</a>
+            </div>
+          </div>
+        </div>
+      </div>
