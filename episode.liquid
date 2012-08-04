@@ -49,8 +49,10 @@
                     <strong>Mots-clés:</strong>
                   {% endif %}
                   
+                    {% unless tag == 'headline' %}
                     {% capture tag_name %}{{tag | replace:'_',' '}}{% endcapture %}
                     <a href="/tags/{{ tag }}" title="{{tag_name}}, toutes les émissions">{{tag_name}}</a>{% unless forloop.last %},{% endunless %}
+                    {% endunless %}
                   
                   {% if forloop.last %}
                   </div>
