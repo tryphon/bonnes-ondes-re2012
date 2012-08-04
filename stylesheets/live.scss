@@ -38,3 +38,71 @@
         clear: both;
     }
 }
+
+body.live {
+    margin-top: 10px;
+
+    #live {
+        width: auto;
+    }
+
+    #logo {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .excerpt_txt {
+        width: 100%;
+    }
+
+    .footer_articles {
+        width: 100%;
+        padding: 8px 0 0 0;
+    }
+
+    .txt_articles {
+        margin-top: 10px;
+        background: url("../images/bg_content_mobile.png") repeat-y 10px 0;
+        padding: 0;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .player {
+        margin-left: 30px;
+        height: 380px;
+        padding-left: 0 !important;
+
+        .sm2_link {
+            position: static;
+            display: block;
+            float: none;
+
+            clear: both;
+            margin-left: 0 !important;
+            width: 198px;
+        }
+
+    }
+
+
+    .ui360-vis {
+
+    }
+
+    .ui360 a {
+        
+    }
+
+
+    .ui360-vis .sm2-360ui {
+        margin-left: 0;
+    }
+
+    .articles {
+        margin-bottom: 0;
+    }
+}

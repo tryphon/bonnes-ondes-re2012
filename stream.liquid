@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    {% include 're2012/head' %}
+
+    <title>{{ show.name }}</title>
+
+    <meta property="og:title" content="{{show.name}}"/>		
+    <meta property="og:image" content="{{show.url_for}}{{theme.url_for_assets}}/images/direct.png" />
+
+    <meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  </head>
+  <body class="live">
+    <img id="logo" src="{{show.url_for}}{{theme.url_for_assets}}/images/logo-mobile.png" alt="Radio Esperanzah!"/>
+    {% include 're2012/live' %}
+  </body>
+</html>

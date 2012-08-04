@@ -584,3 +584,40 @@ body.search .description .broadcasted_at {
 #live .m3u {
   margin-top: 12px;
   clear: both; }
+
+body.live {
+  margin-top: 10px; }
+  body.live #live {
+    width: auto; }
+  body.live #logo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 300px; }
+  body.live .excerpt_txt {
+    width: 100%; }
+  body.live .footer_articles {
+    width: 100%;
+    padding: 8px 0 0 0; }
+  body.live .txt_articles {
+    margin-top: 10px;
+    background: url("../images/bg_content_mobile.png") repeat-y 10px 0;
+    padding: 0;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto; }
+  body.live .player {
+    margin-left: 30px;
+    height: 380px;
+    padding-left: 0 !important; }
+    body.live .player .sm2_link {
+      position: static;
+      display: block;
+      float: none;
+      clear: both;
+      margin-left: 0 !important;
+      width: 198px; }
+  body.live .ui360-vis .sm2-360ui {
+    margin-left: 0; }
+  body.live .articles {
+    margin-bottom: 0; }
