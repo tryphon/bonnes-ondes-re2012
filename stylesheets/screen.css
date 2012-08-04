@@ -594,8 +594,15 @@ body.live {
     display: block;
     margin: 0 auto;
     width: 300px; }
+  body.live .liens_share {
+    margin: 5px auto;
+    width: 300px;
+    text-align: center; }
+    body.live .liens_share a {
+      margin-left: 12px; }
   body.live .excerpt_txt {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 14px; }
   body.live .footer_articles {
     width: 100%;
     padding: 8px 0 0 0; }

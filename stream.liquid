@@ -3,9 +3,9 @@
   <head>
     {% include 're2012/head' %}
 
-    <title>{{ show.name }}</title>
+    <title>{{ show.name }} sur votre mobile</title>
 
-    <meta property="og:title" content="{{show.name}}"/>		
+    <meta property="og:title" content="Ecoutez {{ show.name }} sur votre mobile"/>		
     <meta property="og:image" content="{{show.url_for}}{{theme.url_for_assets}}/images/direct.png" />
 
     <meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
@@ -13,5 +13,16 @@
   <body class="live">
     <img id="logo" src="{{show.url_for}}{{theme.url_for_assets}}/images/logo-mobile.png" alt="Radio Esperanzah!"/>
     {% include 're2012/live' %}
+    <div class="share_articles">
+			<div class="liens_share">
+				<a href="http://www.facebook.com/share.php?u=http://radio.esperanzah.be/direct" title="Partager sur Facebook" target="_blank">
+          <img src="{{theme.url_for_assets}}/images/picto_fb_mini.png" alt="Partager sur FaceBook">
+        </a>
+				<a href="http://twitter.com/intent/tweet?hashtags=esperanzah&amp;text=Ecoutez Radio Esperanzah! sur votre mobile&amp;url=http://radio.esperanzah.be/direct" title="Partagez sur Twitter" target="_blank">
+          <img src="{{theme.url_for_assets}}/images/picto_tw_mini.png" alt="Partagez sur Twitter">
+        </a>
+				<span>Vous avez aimé ? Partagez !</span>
+			</div>
+		</div>
   </body>
 </html>
