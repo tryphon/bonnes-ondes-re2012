@@ -1,5 +1,13 @@
         {% if forloop.first %}<ul>{% endif %}
                 <li {% if episode.tags contains 'headline' %}class="headline"{% endif %}>
-                  <span>{{ episode.broadcasted_at|date:'%Hh%M' }} -</span> <a href="{{ episode.url_for }}">{{ episode.title }}</a>
+                  <span>
+                    {% unless episode.tags contains 'podcast' %}
+                    {{ episode.broadcasted_at|date:'%Hh%M' }} 
+                    {% else %}
+                    {{ episode.broadcasted_at|date:'%d/%m' }} 
+                    {% endunless %}
+                    -
+                  </span> 
+                  <a href="{{ episode.url_for }}">{{ episode.title }}</a>
                 </li> 
         {% if forloop.last %}</ul>{% endif %}

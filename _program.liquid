@@ -6,6 +6,9 @@
 			      </div>
 			      <div class="txt_articles">			
 						  <div class="excerpt_txt">
+
+                A écouter, ré-écouter, télécharger, podcaster et partager :
+
                 {% for episode in show.tag.samedi reversed %}
                 {% if forloop.first %}<h3>Aujourd'hui</h3>{% endif %}
                 {% include 're2012/program_episode' %}
@@ -31,7 +34,7 @@
                 {% include 're2012/program_episode' %}
                 {% endfor %}
 
-                {% for episode in show.tag.podcast reversed %}
+                {% for episode in show.tag.podcast %}
                 {% if forloop.first %}<h3>Podcast</h3>{% endif %}
                 {% include 're2012/program_episode' %}
                 {% endfor %}
