@@ -75,7 +75,7 @@
                 Retrouvez <a href="/tags/live">les concerts en direct</a>
               </div>
               {% else %}
-                {% if episode.broadcasted_at < now %}
+                {% if episode.broadcasted_at < now and episode.contents != empty %}
        	          {% for content in episode.principal_contents %}
 	                  <div class="audio">
                       {{ content.larg_audio_player }}
