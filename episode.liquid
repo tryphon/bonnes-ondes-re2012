@@ -70,32 +70,34 @@
           <div class="widget">
 	          <h2 class="widgettitle">Ecouter</h2>
 	          <div class="widgetcontent">
-              {% if episode.broadcasted_at < now %}
-       	        {% for content in episode.principal_contents %}
-	              <div class="audio">
-                  {{ content.larg_audio_player }}
-
-                  <p class="name">{{content.name}}</p>
-                  
-                  <p class="duration">
-                    {{ content.duration }} mins
-                  </p>
-
-                  <p class="links">
-                    <a href="{{content.url_for_playlist}}">Ecouter</a> 
-                    | Télécharger <a href="{{content.url_for_mp3}}">Mp3</a>
-                    | <a href="{{content.url_for_ogg}}">Ogg</a>
-                  </p>
-	              </div>
-                {% endfor %}
+              {% if episode.tags contains 'live' %}
+              <div class="noaudio">
+                Retrouvez <a href="/tags/live">les concerts en direct</a>
+              </div>
               {% else %}
-                <div class="noaudio">
-                {% unless episode.tags contains 'live' %}
-                  Retrouvez prochainement<br/>le contenu de ce programme
+                {% if episode.broadcasted_at < now %}
+       	          {% for content in episode.principal_contents %}
+	                  <div class="audio">
+                      {{ content.larg_audio_player }}
+
+                      <p class="name">{{content.name}}</p>
+                  
+                      <p class="duration">
+                        {{ content.duration }} mins
+                      </p>
+
+                      <p class="links">
+                        <a href="{{content.url_for_playlist}}">Ecouter</a> 
+                        | Télécharger <a href="{{content.url_for_mp3}}">Mp3</a>
+                        | <a href="{{content.url_for_ogg}}">Ogg</a>
+                      </p>
+	                  </div>
+                  {% endfor %}
                 {% else %}
-                  Retrouvez <a href="/tags/live">les concerts en direct</a>
-                {% endunless %}
-                </div>
+                    <div class="noaudio">
+                      Retrouvez prochainement<br/>le contenu de ce programme
+                    </div>
+                {% endif %}
               {% endif %}
 	          </div>
           </div>
