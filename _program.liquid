@@ -9,18 +9,18 @@
 
                 A écouter, ré-écouter, télécharger, podcaster et partager :
 
-                {% for episode in show.tag.samedi reversed %}
-                {% if forloop.first %}<h3>Aujourd'hui</h3>{% endif %}
-                {% include 're2012/program_episode' %}
-                {% endfor %}
-
                 {% for episode in show.tag.dimanche reversed %}
-                {% if forloop.first %}<h3>Dimanche 5 août</h3>{% endif %}
+                {% if forloop.first %}<h3>Aujourd'hui</h3>{% endif %}
                 {% include 're2012/program_episode' %}
                 {% endfor %}
 
                 {% for episode in show.tag.reportage reversed %}
                 {% if forloop.first %}<h3>Reportages</h3>{% endif %}
+                {% include 're2012/program_episode' %}
+                {% endfor %}
+
+                {% for episode in show.tag.samedi reversed %}
+                {% if forloop.first %}<h3>Samedi 4 août</h3>{% endif %}
                 {% include 're2012/program_episode' %}
                 {% endfor %}
 
