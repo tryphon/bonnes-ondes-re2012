@@ -537,6 +537,11 @@ body.episode .description ul {
     .content_sidebar .audio .ui360-vis .sm2_link {
       display: none; }
 
+#disqus_thread {
+  padding: 24px 34px 10px 37px;
+  margin-bottom: 28px;
+  background: url("../images/bg_content_articles.png") repeat-y; }
+
 body.show #archives a {
   font-size: 18px;
   font-family: "dine";
