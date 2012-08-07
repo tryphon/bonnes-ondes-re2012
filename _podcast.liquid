@@ -1,0 +1,25 @@
+<div class="articles" id="podcast">
+	<div class="header_articles">
+		<h1>
+      Podcast
+    </h1>
+	</div>
+	<div class="txt_articles">			
+		<div class="excerpt_txt">
+      Ré-écoutez tous les programmes de Radio Esperanzah! en vous abonnant au <a href="{{show.url_for_podcast}}">podcast</a> :
+
+      <div id="podcast-url">
+        <a href="{{show.url_for_podcast}}" onclick="if (navigator.userAgent.match(/android/i)) { return true; } ; location.href = '{{show.itpc_url_for_podcast}}'; return false;">
+          <img class="podcast" src="{{theme.url_for_assets}}/images/picto_podcast_color.png"/>
+        </a>
+        <p class="first">
+          <span>Adresse du podcast</span> <input class="podcast" onclick="select(); return false;" size="{{show.url_for_podcast | size}}" value="{{show.url_for_podcast}}" type="text" readonly="true"/> 
+        </p>
+        
+        <p>
+          <a href="http://subscribe.getmiro.com/?url1={{show.url_for_podcast}}&trackback1={{show.url_for}}&section1=audio" title="Ajouter ce podcast dans votre Miro">Miro</a> | <a href="{{show.itpc_url_for_podcast}}" title="Ajouter ce podcast dans votre iTunes">iTunes</a> | <a href="{{show.url_for_podcast}}" title="Voir le feed RSS">RSS</a> | <a href="http://wiki.tryphon.org/comment_lire_un_podcast" title="Comment lire un podcast ?">Aide</a>
+        </p>
+      </div>
+    </div>
+	</div>
+</div>

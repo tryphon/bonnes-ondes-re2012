@@ -20,3 +20,31 @@ body.show #archives {
         margin-top: 10px;
     }
 }
+
+#podcast-url {
+    margin-top: 20px;
+}
+
+#podcast-url img {
+    float: left;
+    margin-right: 15px;
+}
+
+#podcast-url p.first {
+    margin-top: 12px;
+
+    span {
+        font-size: 18px;
+        font-family: "dine";
+
+        margin-right: 10px;
+    }
+}
+
+#podcast-url input {
+    width: 250px;
+    display: inline;
+    background-color: #E8FF81;
+    border: 1px solid #777;
+    padding: 2px;
+}
