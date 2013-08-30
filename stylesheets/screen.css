@@ -517,8 +517,10 @@ body.episode .description h2 {
   margin-bottom: 8px; }
 body.episode .description ul {
   margin-bottom: 8px; }
-  body.episode .description ul li {
-    list-style: circle inside; }
+
+body.episode .description ul li {
+  list-style: circle inside; 
+}
 
 .content_sidebar .noaudio {
   text-align: center; }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    {% include 're2012/head' %}
+    {% include 'head' %}
     {% capture tag_name %}{{search | replace:'_',' ' | capitalize}}{% endcapture %}
 
     <title>{{tag_name}} sur {{show.name}}</title>
@@ -11,7 +11,7 @@
   </head>
   <body class="search">
 	  <div id="container">
-      {% include 're2012/header_small' %}
+      {% include 'header_small' %}
 
       <div id="content">
         <div class="content_articles">
@@ -72,8 +72,8 @@
 	          </div>
           </div>
 
-          {% include 're2012/sidebar_twitter' %}
-          {% include 're2012/sidebar_facebook' %}
+          {% include 'sidebar_twitter' %}
+          {% include 'sidebar_facebook' %}
         </div>
       </div>
 

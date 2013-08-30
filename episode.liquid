@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    {% include 're2012/head' %}
+    {% include 'head' %}
     <title>{{ episode.title }} sur {{ show.name }}</title>
 
     <title>{{ show.name }}</title>
@@ -11,7 +11,7 @@
   </head>
   <body class="episode">
 	  <div id="container">
-      {% include 're2012/header_small' %}
+      {% include 'header_small' %}
 
       <div id="content">
         <div class="content_articles">
@@ -78,7 +78,7 @@
             })();
           </script>
 
-          {% include 're2012/program' %}
+          {% include 'program' %}
         </div>
 
         <div class="content_sidebar">
@@ -117,8 +117,8 @@
 	          </div>
           </div>
 
-          {% include 're2012/sidebar_twitter' %}
-          {% include 're2012/sidebar_facebook' %}
+          {% include 'sidebar_twitter' %}
+          {% include 'sidebar_facebook' %}
         </div>
       </div>
 

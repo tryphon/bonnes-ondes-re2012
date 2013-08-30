@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    {% include 're2012/head' %}
+    {% include 'head' %}
 
     <title>{{ show.name }}</title>
 
@@ -30,7 +30,7 @@
   <body class="show">
 	  <div id="container">
 		  <div id="header">
-        {% include 're2012/header_festival' %}
+        {% include 'header_festival' %}
 
         <div id="ban">
 				  <div id="img_ban">
@@ -67,7 +67,7 @@
             {% endunless %}
           </div>
 
-          {% include 're2012/header_share' %}
+          {% include 'header_share' %}
 
 				  <div id="box_ticket">
             <strong>Radio Esperanzah!</strong>
@@ -79,9 +79,9 @@
       <div id="content">
         <div class="content_articles">
 
-          {% include 're2012/posts' %}
-          {% include 're2012/podcast' %}
-          {% include 're2012/program' %}
+          {% include 'posts' %}
+          {% include 'podcast' %}
+          {% include 'program' %}
 
           <div class="articles">
 			      <div class="smallheader_articles">
@@ -111,9 +111,9 @@
         </div>
 
         <div class="content_sidebar">
-          {% include 're2012/sidebar_twitter' %}
-          {% include 're2012/sidebar_facebook' %}
-          {% include 're2012/sidebar_partenaires' %}
+          {% include 'sidebar_twitter' %}
+          {% include 'sidebar_facebook' %}
+          {% include 'sidebar_partenaires' %}
         </div>
       </div>
 

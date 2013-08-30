@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    {% include 're2012/head' %}
+    {% include 'head' %}
 
     <title>{{ show.name }} sur votre mobile</title>
 
@@ -12,7 +12,7 @@
   </head>
   <body class="live">
     <img id="logo" src="{{show.url_for}}{{theme.url_for_assets}}/images/logo-mobile.png" alt="Radio Esperanzah!"/>
-    {% include 're2012/live' %}
+    {% include 'live' %}
     <div class="share_articles">
 			<div class="liens_share">
 				<a href="http://www.facebook.com/share.php?u=http://radio.esperanzah.be/direct" title="Partager sur Facebook" target="_blank">
